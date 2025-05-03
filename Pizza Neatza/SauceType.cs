@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Pizza_Neatza
 {
-    public enum CrustType
+    public enum SauceType
     {
-        HandTossed,
-        Pan,
-        StuffedCrust
+        NoSauce,
+        Marinara,
+        BBQ
     }
 }

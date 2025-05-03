@@ -30,18 +30,18 @@
         {
             label1 = new Label();
             groupBox1 = new GroupBox();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            rdoLarge = new RadioButton();
+            rdoMedium = new RadioButton();
+            rdoSmall = new RadioButton();
             groupBox2 = new GroupBox();
-            checkBox1 = new CheckBox();
-            radioButton5 = new RadioButton();
-            radioButton6 = new RadioButton();
+            chkStuffedCrust = new CheckBox();
+            rdoPan = new RadioButton();
+            rdoHandTossed = new RadioButton();
             groupBox3 = new GroupBox();
-            radioButton4 = new RadioButton();
-            radioButton7 = new RadioButton();
-            radioButton8 = new RadioButton();
-            comboBox1 = new ComboBox();
+            rdoNoSauce = new RadioButton();
+            rdoBBQ = new RadioButton();
+            rdoMarinara = new RadioButton();
+            cboHam = new ComboBox();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
@@ -51,29 +51,30 @@
             label3 = new Label();
             label2 = new Label();
             groupBox5 = new GroupBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            lblTotal = new Label();
+            chkCheesyBreadsticks = new CheckBox();
+            chkBreadsticks = new CheckBox();
+            lblPrice = new Label();
             btnPlaceOrder = new Button();
             btnExit = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            comboBox19 = new ComboBox();
-            comboBox18 = new ComboBox();
-            comboBox16 = new ComboBox();
-            comboBox15 = new ComboBox();
+            tblToppings = new TableLayoutPanel();
+            cboJalepenios = new ComboBox();
+            cboGreenPeppers = new ComboBox();
+            cboOnions = new ComboBox();
+            cboChicken = new ComboBox();
             label10 = new Label();
             label11 = new Label();
-            comboBox13 = new ComboBox();
-            comboBox11 = new ComboBox();
-            comboBox12 = new ComboBox();
-            comboBox14 = new ComboBox();
-            comboBox17 = new ComboBox();
+            cboGroundBeef = new ComboBox();
+            cboPepperoni = new ComboBox();
+            cboSausage = new ComboBox();
+            cboBacon = new ComboBox();
+            cboPineapple = new ComboBox();
             label12 = new Label();
+            btnClear = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox5.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            tblToppings.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -90,9 +91,9 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(radioButton3);
-            groupBox1.Controls.Add(radioButton2);
-            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Controls.Add(rdoLarge);
+            groupBox1.Controls.Add(rdoMedium);
+            groupBox1.Controls.Add(rdoSmall);
             groupBox1.Location = new Point(12, 53);
             groupBox1.Margin = new Padding(4, 3, 4, 3);
             groupBox1.Name = "groupBox1";
@@ -102,47 +103,46 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Pizza Size";
             // 
-            // radioButton3
+            // rdoLarge
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(6, 72);
-            radioButton3.Margin = new Padding(4, 3, 4, 3);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(74, 19);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Large 16\"";
-            radioButton3.UseVisualStyleBackColor = true;
+            rdoLarge.AutoSize = true;
+            rdoLarge.Checked = true;
+            rdoLarge.Location = new Point(6, 72);
+            rdoLarge.Margin = new Padding(4, 3, 4, 3);
+            rdoLarge.Name = "rdoLarge";
+            rdoLarge.Size = new Size(74, 19);
+            rdoLarge.TabIndex = 2;
+            rdoLarge.TabStop = true;
+            rdoLarge.Text = "Large 16\"";
+            rdoLarge.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdoMedium
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(6, 47);
-            radioButton2.Margin = new Padding(4, 3, 4, 3);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(90, 19);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Medium 12\"";
-            radioButton2.UseVisualStyleBackColor = true;
+            rdoMedium.AutoSize = true;
+            rdoMedium.Location = new Point(6, 47);
+            rdoMedium.Margin = new Padding(4, 3, 4, 3);
+            rdoMedium.Name = "rdoMedium";
+            rdoMedium.Size = new Size(90, 19);
+            rdoMedium.TabIndex = 1;
+            rdoMedium.Text = "Medium 12\"";
+            rdoMedium.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdoSmall
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(6, 22);
-            radioButton1.Margin = new Padding(4, 3, 4, 3);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(74, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Small 10\"";
-            radioButton1.UseVisualStyleBackColor = true;
+            rdoSmall.AutoSize = true;
+            rdoSmall.Location = new Point(6, 22);
+            rdoSmall.Margin = new Padding(4, 3, 4, 3);
+            rdoSmall.Name = "rdoSmall";
+            rdoSmall.Size = new Size(74, 19);
+            rdoSmall.TabIndex = 0;
+            rdoSmall.Text = "Small 10\"";
+            rdoSmall.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(checkBox1);
-            groupBox2.Controls.Add(radioButton5);
-            groupBox2.Controls.Add(radioButton6);
+            groupBox2.Controls.Add(chkStuffedCrust);
+            groupBox2.Controls.Add(rdoPan);
+            groupBox2.Controls.Add(rdoHandTossed);
             groupBox2.Location = new Point(218, 53);
             groupBox2.Margin = new Padding(4, 3, 4, 3);
             groupBox2.Name = "groupBox2";
@@ -152,46 +152,46 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Crust Option";
             // 
-            // checkBox1
+            // chkStuffedCrust
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(6, 72);
-            checkBox1.Margin = new Padding(4, 3, 4, 3);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(118, 19);
-            checkBox1.TabIndex = 2;
-            checkBox1.Text = "Stuffed Crust +$2";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkStuffedCrust.AutoSize = true;
+            chkStuffedCrust.Location = new Point(6, 72);
+            chkStuffedCrust.Margin = new Padding(4, 3, 4, 3);
+            chkStuffedCrust.Name = "chkStuffedCrust";
+            chkStuffedCrust.Size = new Size(118, 19);
+            chkStuffedCrust.TabIndex = 2;
+            chkStuffedCrust.Text = "Stuffed Crust +$2";
+            chkStuffedCrust.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rdoPan
             // 
-            radioButton5.AutoSize = true;
-            radioButton5.Location = new Point(6, 47);
-            radioButton5.Margin = new Padding(4, 3, 4, 3);
-            radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(45, 19);
-            radioButton5.TabIndex = 1;
-            radioButton5.TabStop = true;
-            radioButton5.Text = "Pan";
-            radioButton5.UseVisualStyleBackColor = true;
+            rdoPan.AutoSize = true;
+            rdoPan.Location = new Point(6, 47);
+            rdoPan.Margin = new Padding(4, 3, 4, 3);
+            rdoPan.Name = "rdoPan";
+            rdoPan.Size = new Size(45, 19);
+            rdoPan.TabIndex = 1;
+            rdoPan.TabStop = true;
+            rdoPan.Text = "Pan";
+            rdoPan.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdoHandTossed
             // 
-            radioButton6.AutoSize = true;
-            radioButton6.Location = new Point(6, 22);
-            radioButton6.Margin = new Padding(4, 3, 4, 3);
-            radioButton6.Name = "radioButton6";
-            radioButton6.Size = new Size(93, 19);
-            radioButton6.TabIndex = 0;
-            radioButton6.TabStop = true;
-            radioButton6.Text = "Hand Tossed";
-            radioButton6.UseVisualStyleBackColor = true;
+            rdoHandTossed.AutoSize = true;
+            rdoHandTossed.Location = new Point(6, 22);
+            rdoHandTossed.Margin = new Padding(4, 3, 4, 3);
+            rdoHandTossed.Name = "rdoHandTossed";
+            rdoHandTossed.Size = new Size(93, 19);
+            rdoHandTossed.TabIndex = 0;
+            rdoHandTossed.TabStop = true;
+            rdoHandTossed.Text = "Hand Tossed";
+            rdoHandTossed.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(radioButton4);
-            groupBox3.Controls.Add(radioButton7);
-            groupBox3.Controls.Add(radioButton8);
+            groupBox3.Controls.Add(rdoNoSauce);
+            groupBox3.Controls.Add(rdoBBQ);
+            groupBox3.Controls.Add(rdoMarinara);
             groupBox3.Location = new Point(424, 53);
             groupBox3.Margin = new Padding(4, 3, 4, 3);
             groupBox3.Name = "groupBox3";
@@ -201,52 +201,52 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Sauce";
             // 
-            // radioButton4
+            // rdoNoSauce
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(6, 72);
-            radioButton4.Margin = new Padding(4, 3, 4, 3);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(75, 19);
-            radioButton4.TabIndex = 2;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "No Sauce";
-            radioButton4.UseVisualStyleBackColor = true;
+            rdoNoSauce.AutoSize = true;
+            rdoNoSauce.Location = new Point(6, 72);
+            rdoNoSauce.Margin = new Padding(4, 3, 4, 3);
+            rdoNoSauce.Name = "rdoNoSauce";
+            rdoNoSauce.Size = new Size(75, 19);
+            rdoNoSauce.TabIndex = 2;
+            rdoNoSauce.TabStop = true;
+            rdoNoSauce.Text = "No Sauce";
+            rdoNoSauce.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rdoBBQ
             // 
-            radioButton7.AutoSize = true;
-            radioButton7.Location = new Point(6, 47);
-            radioButton7.Margin = new Padding(4, 3, 4, 3);
-            radioButton7.Name = "radioButton7";
-            radioButton7.Size = new Size(48, 19);
-            radioButton7.TabIndex = 1;
-            radioButton7.TabStop = true;
-            radioButton7.Text = "BBQ";
-            radioButton7.UseVisualStyleBackColor = true;
+            rdoBBQ.AutoSize = true;
+            rdoBBQ.Location = new Point(6, 47);
+            rdoBBQ.Margin = new Padding(4, 3, 4, 3);
+            rdoBBQ.Name = "rdoBBQ";
+            rdoBBQ.Size = new Size(48, 19);
+            rdoBBQ.TabIndex = 1;
+            rdoBBQ.TabStop = true;
+            rdoBBQ.Text = "BBQ";
+            rdoBBQ.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // rdoMarinara
             // 
-            radioButton8.AutoSize = true;
-            radioButton8.Location = new Point(6, 22);
-            radioButton8.Margin = new Padding(4, 3, 4, 3);
-            radioButton8.Name = "radioButton8";
-            radioButton8.Size = new Size(72, 19);
-            radioButton8.TabIndex = 0;
-            radioButton8.TabStop = true;
-            radioButton8.Text = "Marinara";
-            radioButton8.UseVisualStyleBackColor = true;
+            rdoMarinara.AutoSize = true;
+            rdoMarinara.Location = new Point(6, 22);
+            rdoMarinara.Margin = new Padding(4, 3, 4, 3);
+            rdoMarinara.Name = "rdoMarinara";
+            rdoMarinara.Size = new Size(72, 19);
+            rdoMarinara.TabIndex = 0;
+            rdoMarinara.TabStop = true;
+            rdoMarinara.Text = "Marinara";
+            rdoMarinara.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cboHam
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox1.Location = new Point(116, 94);
-            comboBox1.Margin = new Padding(4, 3, 4, 3);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(119, 23);
-            comboBox1.TabIndex = 8;
+            cboHam.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboHam.FormattingEnabled = true;
+            cboHam.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboHam.Location = new Point(116, 94);
+            cboHam.Margin = new Padding(4, 3, 4, 3);
+            cboHam.Name = "cboHam";
+            cboHam.Size = new Size(119, 23);
+            cboHam.TabIndex = 8;
             // 
             // label9
             // 
@@ -329,8 +329,8 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(checkBox3);
-            groupBox5.Controls.Add(checkBox2);
+            groupBox5.Controls.Add(chkCheesyBreadsticks);
+            groupBox5.Controls.Add(chkBreadsticks);
             groupBox5.Location = new Point(422, 178);
             groupBox5.Margin = new Padding(4, 3, 4, 3);
             groupBox5.Name = "groupBox5";
@@ -340,146 +340,148 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Extras";
             // 
-            // checkBox3
+            // chkCheesyBreadsticks
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(6, 52);
-            checkBox3.Margin = new Padding(4, 3, 4, 3);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(149, 19);
-            checkBox3.TabIndex = 4;
-            checkBox3.Text = "Cheesy Breadsticks +$7";
-            checkBox3.UseVisualStyleBackColor = true;
+            chkCheesyBreadsticks.AutoSize = true;
+            chkCheesyBreadsticks.Location = new Point(6, 52);
+            chkCheesyBreadsticks.Margin = new Padding(4, 3, 4, 3);
+            chkCheesyBreadsticks.Name = "chkCheesyBreadsticks";
+            chkCheesyBreadsticks.Size = new Size(149, 19);
+            chkCheesyBreadsticks.TabIndex = 4;
+            chkCheesyBreadsticks.Text = "Cheesy Breadsticks +$7";
+            chkCheesyBreadsticks.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkBreadsticks
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(6, 23);
-            checkBox2.Margin = new Padding(4, 3, 4, 3);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(103, 19);
-            checkBox2.TabIndex = 3;
-            checkBox2.Text = "Breadstick +$5";
-            checkBox2.UseVisualStyleBackColor = true;
+            chkBreadsticks.AutoSize = true;
+            chkBreadsticks.Location = new Point(6, 23);
+            chkBreadsticks.Margin = new Padding(4, 3, 4, 3);
+            chkBreadsticks.Name = "chkBreadsticks";
+            chkBreadsticks.Size = new Size(103, 19);
+            chkBreadsticks.TabIndex = 3;
+            chkBreadsticks.Text = "Breadstick +$5";
+            chkBreadsticks.UseVisualStyleBackColor = true;
             // 
-            // lblTotal
+            // lblPrice
             // 
-            lblTotal.AutoSize = true;
-            lblTotal.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTotal.Location = new Point(428, 292);
-            lblTotal.Margin = new Padding(4, 0, 4, 0);
-            lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(71, 15);
-            lblTotal.TabIndex = 6;
-            lblTotal.Text = "Total: $0.00";
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPrice.Location = new Point(426, 329);
+            lblPrice.Margin = new Padding(4, 0, 4, 0);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(71, 15);
+            lblPrice.TabIndex = 6;
+            lblPrice.Text = "Total: $0.00";
             // 
             // btnPlaceOrder
             // 
-            btnPlaceOrder.Location = new Point(505, 284);
+            btnPlaceOrder.Location = new Point(505, 325);
             btnPlaceOrder.Margin = new Padding(4, 3, 4, 3);
             btnPlaceOrder.Name = "btnPlaceOrder";
             btnPlaceOrder.Size = new Size(119, 23);
             btnPlaceOrder.TabIndex = 7;
             btnPlaceOrder.Text = "Place Order";
             btnPlaceOrder.UseVisualStyleBackColor = true;
+            btnPlaceOrder.Click += btnPlaceOrder_Click;
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(505, 327);
+            btnExit.Location = new Point(505, 368);
             btnExit.Margin = new Padding(4, 3, 4, 3);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(119, 23);
             btnExit.TabIndex = 8;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
-            // tableLayoutPanel1
+            // tblToppings
             // 
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 110F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 128F));
-            tableLayoutPanel1.Controls.Add(comboBox19, 1, 9);
-            tableLayoutPanel1.Controls.Add(comboBox18, 1, 7);
-            tableLayoutPanel1.Controls.Add(comboBox16, 1, 6);
-            tableLayoutPanel1.Controls.Add(comboBox15, 1, 5);
-            tableLayoutPanel1.Controls.Add(label2, 0, 0);
-            tableLayoutPanel1.Controls.Add(label10, 0, 6);
-            tableLayoutPanel1.Controls.Add(label11, 0, 9);
-            tableLayoutPanel1.Controls.Add(label3, 0, 1);
-            tableLayoutPanel1.Controls.Add(label4, 0, 2);
-            tableLayoutPanel1.Controls.Add(label5, 0, 3);
-            tableLayoutPanel1.Controls.Add(label8, 0, 4);
-            tableLayoutPanel1.Controls.Add(label6, 0, 5);
-            tableLayoutPanel1.Controls.Add(label9, 0, 8);
-            tableLayoutPanel1.Controls.Add(label7, 0, 7);
-            tableLayoutPanel1.Controls.Add(comboBox13, 1, 2);
-            tableLayoutPanel1.Controls.Add(comboBox1, 1, 3);
-            tableLayoutPanel1.Controls.Add(comboBox11, 1, 0);
-            tableLayoutPanel1.Controls.Add(comboBox12, 1, 1);
-            tableLayoutPanel1.Controls.Add(comboBox14, 1, 4);
-            tableLayoutPanel1.Controls.Add(comboBox17, 1, 8);
-            tableLayoutPanel1.Location = new Point(78, 178);
-            tableLayoutPanel1.Margin = new Padding(4, 3, 4, 3);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 10;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
-            tableLayoutPanel1.Size = new Size(241, 301);
-            tableLayoutPanel1.TabIndex = 9;
+            tblToppings.AutoSize = true;
+            tblToppings.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tblToppings.ColumnCount = 2;
+            tblToppings.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 110F));
+            tblToppings.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 128F));
+            tblToppings.Controls.Add(cboJalepenios, 1, 9);
+            tblToppings.Controls.Add(cboGreenPeppers, 1, 7);
+            tblToppings.Controls.Add(cboOnions, 1, 6);
+            tblToppings.Controls.Add(cboChicken, 1, 5);
+            tblToppings.Controls.Add(label2, 0, 0);
+            tblToppings.Controls.Add(label10, 0, 6);
+            tblToppings.Controls.Add(label11, 0, 9);
+            tblToppings.Controls.Add(label3, 0, 1);
+            tblToppings.Controls.Add(label4, 0, 2);
+            tblToppings.Controls.Add(label5, 0, 3);
+            tblToppings.Controls.Add(label8, 0, 4);
+            tblToppings.Controls.Add(label6, 0, 5);
+            tblToppings.Controls.Add(label9, 0, 8);
+            tblToppings.Controls.Add(label7, 0, 7);
+            tblToppings.Controls.Add(cboGroundBeef, 1, 2);
+            tblToppings.Controls.Add(cboHam, 1, 3);
+            tblToppings.Controls.Add(cboPepperoni, 1, 0);
+            tblToppings.Controls.Add(cboSausage, 1, 1);
+            tblToppings.Controls.Add(cboBacon, 1, 4);
+            tblToppings.Controls.Add(cboPineapple, 1, 8);
+            tblToppings.Location = new Point(78, 178);
+            tblToppings.Margin = new Padding(4, 3, 4, 3);
+            tblToppings.Name = "tblToppings";
+            tblToppings.RowCount = 10;
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblToppings.Size = new Size(241, 301);
+            tblToppings.TabIndex = 9;
             // 
-            // comboBox19
+            // cboJalepenios
             // 
-            comboBox19.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox19.FormattingEnabled = true;
-            comboBox19.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox19.Location = new Point(116, 274);
-            comboBox19.Margin = new Padding(4, 3, 4, 3);
-            comboBox19.Name = "comboBox19";
-            comboBox19.Size = new Size(119, 23);
-            comboBox19.TabIndex = 24;
+            cboJalepenios.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboJalepenios.FormattingEnabled = true;
+            cboJalepenios.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboJalepenios.Location = new Point(116, 274);
+            cboJalepenios.Margin = new Padding(4, 3, 4, 3);
+            cboJalepenios.Name = "cboJalepenios";
+            cboJalepenios.Size = new Size(119, 23);
+            cboJalepenios.TabIndex = 24;
             // 
-            // comboBox18
+            // cboGreenPeppers
             // 
-            comboBox18.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox18.FormattingEnabled = true;
-            comboBox18.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox18.Location = new Point(116, 214);
-            comboBox18.Margin = new Padding(4, 3, 4, 3);
-            comboBox18.Name = "comboBox18";
-            comboBox18.Size = new Size(119, 23);
-            comboBox18.TabIndex = 23;
+            cboGreenPeppers.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboGreenPeppers.FormattingEnabled = true;
+            cboGreenPeppers.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboGreenPeppers.Location = new Point(116, 214);
+            cboGreenPeppers.Margin = new Padding(4, 3, 4, 3);
+            cboGreenPeppers.Name = "cboGreenPeppers";
+            cboGreenPeppers.Size = new Size(119, 23);
+            cboGreenPeppers.TabIndex = 23;
             // 
-            // comboBox16
+            // cboOnions
             // 
-            comboBox16.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox16.FormattingEnabled = true;
-            comboBox16.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox16.Location = new Point(116, 184);
-            comboBox16.Margin = new Padding(4, 3, 4, 3);
-            comboBox16.Name = "comboBox16";
-            comboBox16.Size = new Size(119, 23);
-            comboBox16.TabIndex = 21;
+            cboOnions.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboOnions.FormattingEnabled = true;
+            cboOnions.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboOnions.Location = new Point(116, 184);
+            cboOnions.Margin = new Padding(4, 3, 4, 3);
+            cboOnions.Name = "cboOnions";
+            cboOnions.Size = new Size(119, 23);
+            cboOnions.TabIndex = 21;
             // 
-            // comboBox15
+            // cboChicken
             // 
-            comboBox15.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox15.FormattingEnabled = true;
-            comboBox15.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox15.Location = new Point(116, 154);
-            comboBox15.Margin = new Padding(4, 3, 4, 3);
-            comboBox15.Name = "comboBox15";
-            comboBox15.Size = new Size(119, 23);
-            comboBox15.TabIndex = 20;
+            cboChicken.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboChicken.FormattingEnabled = true;
+            cboChicken.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboChicken.Location = new Point(116, 154);
+            cboChicken.Margin = new Padding(4, 3, 4, 3);
+            cboChicken.Name = "cboChicken";
+            cboChicken.Size = new Size(119, 23);
+            cboChicken.TabIndex = 20;
             // 
             // label10
             // 
@@ -501,60 +503,60 @@
             label11.TabIndex = 16;
             label11.Text = "Jalepenios";
             // 
-            // comboBox13
+            // cboGroundBeef
             // 
-            comboBox13.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox13.FormattingEnabled = true;
-            comboBox13.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox13.Location = new Point(116, 64);
-            comboBox13.Margin = new Padding(4, 3, 4, 3);
-            comboBox13.Name = "comboBox13";
-            comboBox13.Size = new Size(119, 23);
-            comboBox13.TabIndex = 18;
+            cboGroundBeef.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboGroundBeef.FormattingEnabled = true;
+            cboGroundBeef.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboGroundBeef.Location = new Point(116, 64);
+            cboGroundBeef.Margin = new Padding(4, 3, 4, 3);
+            cboGroundBeef.Name = "cboGroundBeef";
+            cboGroundBeef.Size = new Size(119, 23);
+            cboGroundBeef.TabIndex = 18;
             // 
-            // comboBox11
+            // cboPepperoni
             // 
-            comboBox11.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox11.FormattingEnabled = true;
-            comboBox11.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox11.Location = new Point(116, 4);
-            comboBox11.Margin = new Padding(4, 3, 4, 3);
-            comboBox11.Name = "comboBox11";
-            comboBox11.Size = new Size(119, 23);
-            comboBox11.TabIndex = 9;
+            cboPepperoni.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboPepperoni.FormattingEnabled = true;
+            cboPepperoni.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboPepperoni.Location = new Point(116, 4);
+            cboPepperoni.Margin = new Padding(4, 3, 4, 3);
+            cboPepperoni.Name = "cboPepperoni";
+            cboPepperoni.Size = new Size(119, 23);
+            cboPepperoni.TabIndex = 9;
             // 
-            // comboBox12
+            // cboSausage
             // 
-            comboBox12.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox12.FormattingEnabled = true;
-            comboBox12.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox12.Location = new Point(116, 34);
-            comboBox12.Margin = new Padding(4, 3, 4, 3);
-            comboBox12.Name = "comboBox12";
-            comboBox12.Size = new Size(119, 23);
-            comboBox12.TabIndex = 10;
+            cboSausage.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboSausage.FormattingEnabled = true;
+            cboSausage.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboSausage.Location = new Point(116, 34);
+            cboSausage.Margin = new Padding(4, 3, 4, 3);
+            cboSausage.Name = "cboSausage";
+            cboSausage.Size = new Size(119, 23);
+            cboSausage.TabIndex = 10;
             // 
-            // comboBox14
+            // cboBacon
             // 
-            comboBox14.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox14.FormattingEnabled = true;
-            comboBox14.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox14.Location = new Point(116, 124);
-            comboBox14.Margin = new Padding(4, 3, 4, 3);
-            comboBox14.Name = "comboBox14";
-            comboBox14.Size = new Size(119, 23);
-            comboBox14.TabIndex = 19;
+            cboBacon.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboBacon.FormattingEnabled = true;
+            cboBacon.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboBacon.Location = new Point(116, 124);
+            cboBacon.Margin = new Padding(4, 3, 4, 3);
+            cboBacon.Name = "cboBacon";
+            cboBacon.Size = new Size(119, 23);
+            cboBacon.TabIndex = 19;
             // 
-            // comboBox17
+            // cboPineapple
             // 
-            comboBox17.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox17.FormattingEnabled = true;
-            comboBox17.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
-            comboBox17.Location = new Point(116, 244);
-            comboBox17.Margin = new Padding(4, 3, 4, 3);
-            comboBox17.Name = "comboBox17";
-            comboBox17.Size = new Size(119, 23);
-            comboBox17.TabIndex = 22;
+            cboPineapple.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboPineapple.FormattingEnabled = true;
+            cboPineapple.Items.AddRange(new object[] { "Light", "Regular", "Extra" });
+            cboPineapple.Location = new Point(116, 244);
+            cboPineapple.Margin = new Padding(4, 3, 4, 3);
+            cboPineapple.Name = "cboPineapple";
+            cboPineapple.Size = new Size(119, 23);
+            cboPineapple.TabIndex = 22;
             // 
             // label12
             // 
@@ -567,16 +569,27 @@
             label12.TabIndex = 10;
             label12.Text = "Toppings";
             // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(346, 288);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(75, 23);
+            btnClear.TabIndex = 11;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
             // PatsPizzaPalooza
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(634, 487);
+            Controls.Add(btnClear);
             Controls.Add(label12);
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(tblToppings);
             Controls.Add(btnExit);
             Controls.Add(btnPlaceOrder);
-            Controls.Add(lblTotal);
+            Controls.Add(lblPrice);
             Controls.Add(groupBox5);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
@@ -596,8 +609,8 @@
             groupBox3.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
+            tblToppings.ResumeLayout(false);
+            tblToppings.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -606,17 +619,17 @@
 
         private Label label1;
         private GroupBox groupBox1;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton rdoLarge;
+        private RadioButton rdoMedium;
+        private RadioButton rdoSmall;
         private GroupBox groupBox2;
-        private CheckBox checkBox1;
-        private RadioButton radioButton5;
-        private RadioButton radioButton6;
+        private CheckBox chkStuffedCrust;
+        private RadioButton rdoPan;
+        private RadioButton rdoHandTossed;
         private GroupBox groupBox3;
-        private RadioButton radioButton4;
-        private RadioButton radioButton7;
-        private RadioButton radioButton8;
+        private RadioButton rdoNoSauce;
+        private RadioButton rdoBBQ;
+        private RadioButton rdoMarinara;
         private Label label8;
         private Label label7;
         private Label label6;
@@ -624,26 +637,27 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private ComboBox comboBox1;
+        private ComboBox cboHam;
         private Label label9;
         private GroupBox groupBox5;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private Label lblTotal;
+        private CheckBox chkCheesyBreadsticks;
+        private CheckBox chkBreadsticks;
+        private Label lblPrice;
         private Button btnPlaceOrder;
         private Button btnExit;
         private Label label10;
         private Label label11;
-        private TableLayoutPanel tableLayoutPanel1;
-        private ComboBox comboBox11;
-        private ComboBox comboBox12;
-        private ComboBox comboBox13;
-        private ComboBox comboBox14;
-        private ComboBox comboBox16;
-        private ComboBox comboBox15;
-        private ComboBox comboBox17;
-        private ComboBox comboBox19;
-        private ComboBox comboBox18;
+        private TableLayoutPanel tblToppings;
+        private ComboBox cboPepperoni;
+        private ComboBox cboSausage;
+        private ComboBox cboGroundBeef;
+        private ComboBox cboBacon;
+        private ComboBox cboOnions;
+        private ComboBox cboChicken;
+        private ComboBox cboPineapple;
+        private ComboBox cboJalepenios;
+        private ComboBox cboGreenPeppers;
         private Label label12;
+        private Button btnClear;
     }
 }

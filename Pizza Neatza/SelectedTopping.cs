@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Pizza_Neatza
 {
-   
-        public class SelectedTopping
-        {
-            public Toppings Toppings { get; set; }
-            public ToppingAmount Amount { get; set; }
-        }
+
+    public class SelectedTopping
+    {
+        public Toppings Topping { get; set; }
+        public ToppingAmount Amount { get; set; }
     }
+}
 

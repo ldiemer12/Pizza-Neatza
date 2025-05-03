@@ -10,7 +10,7 @@ namespace Pizza_Neatza
     public class Toppings
     {
         public string Name { get; set; } = "";
-        public bool IsPremium { get; set; }
+        public bool IsPremiumItem { get; set; }
     }
 }
 

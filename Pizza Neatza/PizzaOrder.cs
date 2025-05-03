@@ -8,7 +8,12 @@ namespace Pizza_Neatza
 {
     public class PizzaOrder
     {
-        public PizzaSize Size {  get; set; }
+        public Pizza Pizza { get; set; } = new();
+
+        public decimal GetTotal()
+        {
+            return Pizza.GetPrice();
+        }
 
     }
 }
