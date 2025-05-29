@@ -14,7 +14,7 @@ namespace Pizza_Neatza
 
             if (!rdoHandTossed.Checked && !rdoPan.Checked)
             {
-                MessageBox.Show("Please select a curst type.", "Missing Crust", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a crust type.", "Missing Crust", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -141,7 +141,7 @@ namespace Pizza_Neatza
                 var combo = tblToppings.GetControlFromPosition(1, i) as ComboBox;
                 if (combo != null)
                 {
-                    combo.SelectedIndex = 1;
+                    combo.SelectedIndex = -1;
                 }
                 lblPrice.Text = "";
             }
